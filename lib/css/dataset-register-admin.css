@@ -3,6 +3,10 @@
     flex-direction: row;
 }
 
+.dataset-status .alert div {
+    align-self: center;
+}
+
 .dataset-status .alert .icon {
     margin-right: 8px;
     align-self: center;
@@ -13,5 +17,6 @@
 }
 
 .dataset-status .alert button {
-    margin-left: 1em;
+    margin-left: auto;
+    align-self: center;
 }
