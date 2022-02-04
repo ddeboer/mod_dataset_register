@@ -19,29 +19,48 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../ginger/modules/mod_dataset_register/templates/dataset-status.tpl:9
 #: ../ginger/modules/mod_dataset_register/templates/dataset-status.tpl:17
+msgid ""
+"Contact <a href=\"mailto:info@nationaalarchief.nl\" class=\"alert-link"
+"\">info@nationaalarchief.nl</a> to add"
+msgstr ""
+"Mail <a href=\"mailto:info@nationaalarchief.nl\" class=\"alert-link"
+"\">info@nationaalarchief.nl</a> om"
+
+#: ../ginger/modules/mod_dataset_register/templates/dataset-status.tpl:9
+#: ../ginger/modules/mod_dataset_register/templates/dataset-status.tpl:34
 msgid "Dataset Register"
 msgstr "Datasetregister"
 
-#: ../ginger/modules/mod_dataset_register/templates/dataset-status.tpl:18
+#: ../ginger/modules/mod_dataset_register/templates/dataset-status.tpl:24
+#: ../ginger/modules/mod_dataset_register/templates/dataset-status.tpl:36
 msgid "Submit to Dataset Register"
 msgstr "Aanmelden bij Datasetregister"
 
 #: ../ginger/modules/mod_dataset_register/templates/dataset-status.tpl:8
-msgid "This dataset has been submitted to the"
-msgstr "Deze dataset is aangemeld bij het"
+msgid "This dataset has been successfully submitted to the"
+msgstr "Deze dataset is succesvol aangemeld bij het"
 
-#: ../ginger/modules/mod_dataset_register/templates/dataset-status.tpl:25
+#: ../ginger/modules/mod_dataset_register/templates/dataset-status.tpl:42
 msgid ""
 "This dataset is not yet valid. Make sure to enter values for all required "
 "fields."
 msgstr "Deze dataset is nog niet geldig. Vul alle verplichte velden in."
 
-#: ../ginger/modules/mod_dataset_register/templates/dataset-status.tpl:16
+#: ../ginger/modules/mod_dataset_register/templates/dataset-status.tpl:33
 msgid "This dataset is valid, so you can submit it to the"
-msgstr "Deze dataset is geldid, dus je kunt hem aanmelden bij het"
+msgstr "Deze dataset is geldig, dus je kunt hem aanmelden bij het"
 
-#: ../ginger/modules/mod_dataset_register/templates/dataset-status.tpl:26
+#: ../ginger/modules/mod_dataset_register/templates/dataset-status.tpl:16
+msgid "This site’s domain name is not yet allowed to register datasets."
+msgstr ""
+"Het is nog niet toegestaan om datasets aan te melden onder de domeinnaam van "
+"deze site."
+
+#: ../ginger/modules/mod_dataset_register/templates/dataset-status.tpl:43
 msgid "View validation results"
 msgstr "Bekijk validatieresultaten"
+
+#: ../ginger/modules/mod_dataset_register/templates/dataset-status.tpl:19
+msgid "to the allow list and try again."
+msgstr "toe te voegen aan de lijst en het dan nog eens te proberen."

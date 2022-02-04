@@ -106,9 +106,20 @@ organization(Predicate, Id, Context) ->
     ].
 
 event(#postback{message = {register_dataset, [{id, Id}]}}, Context) ->
-    %%update_status(Id, registered, z_acl:sudo(Context)),
-    m_rsc:update(Id, [{registered, calendar:universal_time()}], Context),
+    case dataset_register_client:submit(Id, Context) of
+        valid ->
+            m_rsc:update(
+                Id, [
+                    {registered, calendar:universal_time()},
+                    {dataset_register_forbidden, undefined}
+                ],
+                Context
+            );
+        {invalid, 403} ->
+            %% Toggle the property to re-enable the button without having to use wires.
+            m_rsc:update(Id, [{dataset_register_forbidden, undefined}], Context),
+            m_rsc:update(Id, [{dataset_register_forbidden, true}], Context);
+        _ ->
+            m_rsc:update(Id, [{dataset_register_forbidden, undefined}], Context)
+    end,
     Context.
-
-
-

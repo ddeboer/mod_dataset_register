@@ -5,9 +5,26 @@
             <div class="alert alert-info" role="alert">
                 <svg class="icon" width="18" height="18" role="img" aria-label="Info:"><use xlink:href="#check-circle-fill"/></svg>
                 <div>
-                    {_ This dataset has been submitted to the _}
+                    {_ This dataset has been successfully submitted to the _}
                     <a target="_blank" class="alert-link" href="https://datasetregister.netwerkdigitaalerfgoed.nl/">{_ Dataset Register _}<span class="glyphicon glyphicon-new-window"></span></a>.
                 </div>
+            </div>
+        {% elseif id.dataset_register_forbidden %}
+            <div class="alert alert-danger" role="alert">
+                <svg class="icon" width="18" height="18" role="img" aria-label="Info:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+                <div>
+                    {_ This site’s domain name is not yet allowed to register datasets. _}
+                    {_ Contact <a href="mailto:info@nationaalarchief.nl" class="alert-link">info@nationaalarchief.nl</a> to add _}
+                    <samp>{{ m.site.hostname }}</samp>
+                    {_ to the allow list and try again. _}
+                </div>
+                {% button
+                    id="submit-button"
+                    class="btn btn btn-danger"
+                    text=_"Submit to Dataset Register"
+                    action={script script="$(event.currentTarget).attr('disabled', 'disabled')"}
+                    postback={register_dataset id=id} delegate=`m_dataset`
+                %}
             </div>
         {% elseif id.dataset_register_validation == "valid" %}
             <div class="alert alert-success" role="alert">
@@ -15,8 +32,8 @@
                 <div>
                     {_ This dataset is valid, so you can submit it to the _}
                     <a target="_blank" class="alert-link" href="https://datasetregister.netwerkdigitaalerfgoed.nl/">{_ Dataset Register _}<span class="glyphicon glyphicon-new-window"></span></a>.
-                    {% button class="btn btn btn-success" text=_"Submit to Dataset Register" postback={register_dataset id=id} delegate=`m_dataset` %}
                 </div>
+                {% button class="btn btn btn-success" text=_"Submit to Dataset Register" postback={register_dataset id=id} delegate=`m_dataset` %}
             </div>
         {% elseif id.dataset_register_validation == "invalid" %}
             <div class="alert alert-warning" role="alert">
