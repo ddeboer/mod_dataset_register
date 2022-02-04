@@ -1,0 +1,17 @@
+.dataset-status .alert {
+    display: flex;
+    flex-direction: row;
+}
+
+.dataset-status .alert .icon {
+    margin-right: 8px;
+    align-self: center;
+}
+
+.dataset-status .alert a span.glyphicon {
+    margin-left: .3em
+}
+
+.dataset-status .alert button {
+    margin-left: 1em;
+}

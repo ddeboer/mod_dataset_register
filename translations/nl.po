@@ -1,0 +1,47 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# NB: Consider using poEdit <http://poedit.sourceforge.net>
+#
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../ginger/modules/mod_dataset_register/templates/dataset-status.tpl:9
+#: ../ginger/modules/mod_dataset_register/templates/dataset-status.tpl:17
+msgid "Dataset Register"
+msgstr "Datasetregister"
+
+#: ../ginger/modules/mod_dataset_register/templates/dataset-status.tpl:18
+msgid "Submit to Dataset Register"
+msgstr "Aanmelden bij Datasetregister"
+
+#: ../ginger/modules/mod_dataset_register/templates/dataset-status.tpl:8
+msgid "This dataset has been submitted to the"
+msgstr "Deze dataset is aangemeld bij het"
+
+#: ../ginger/modules/mod_dataset_register/templates/dataset-status.tpl:25
+msgid ""
+"This dataset is not yet valid. Make sure to enter values for all required "
+"fields."
+msgstr "Deze dataset is nog niet geldig. Vul alle verplichte velden in."
+
+#: ../ginger/modules/mod_dataset_register/templates/dataset-status.tpl:16
+msgid "This dataset is valid, so you can submit it to the"
+msgstr "Deze dataset is geldid, dus je kunt hem aanmelden bij het"
+
+#: ../ginger/modules/mod_dataset_register/templates/dataset-status.tpl:26
+msgid "View validation results"
+msgstr "Bekijk validatieresultaten"
