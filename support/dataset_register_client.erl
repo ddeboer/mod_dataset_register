@@ -11,8 +11,7 @@
 
 -include("zotonic.hrl").
 
-%%-define(URL, <<"https://datasetregister.netwerkdigitaalerfgoed.nl/api/">>).
--define(URL, <<"http://localhost:3000">>).
+-define(URL, <<"https://datasetregister.netwerkdigitaalerfgoed.nl/api/">>).
 -define(VALIDATE_URL, <<"https://datasetregister.netwerkdigitaalerfgoed.nl/validate.php?url=">>).
 
 %% @doc Validate a dataset description with the Dataset Register.
