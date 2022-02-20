@@ -43,7 +43,6 @@
                     <a target="_blank" class="alert-link" href="{{ m.dataset[id].validation_url }}">{_ View validation results _}<span class="glyphicon glyphicon-new-window"></span></a>
                 </div>
             </div>
-        </div>
         {% endif %}
     </div>
 
