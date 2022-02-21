@@ -57,7 +57,7 @@ dataset_to_rdf(Id, Context) ->
                 },
                 #triple{
                     predicate = rdf_property:schema(<<"contentUrl">>),
-                    object = z_dispatcher:url_for(rsc_json_ld, [{id, Id}, use_absolute_url], Context)
+                    object = z_dispatcher:url_for(hydra, [{id, Id}, use_absolute_url], Context)
                 }
             ]}
         },
@@ -74,7 +74,7 @@ dataset_to_rdf(Id, Context) ->
                 },
                 #triple{
                     predicate = rdf_property:schema(<<"contentUrl">>),
-                    object = z_dispatcher:url_for(rsc_turtle, [{id, Id}, use_absolute_url], Context)
+                    object = z_dispatcher:url_for(hydra, [{id, Id}, use_absolute_url], Context)
                 }
             ]}
         }
